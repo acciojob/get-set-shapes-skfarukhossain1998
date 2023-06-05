@@ -28,5 +28,5 @@ window.Square = Square;
 const sq_s = 6; 
 const rectangle = new Rectangle(rect_w, rect_h);
 const square = new Square(sq_s); 
-square.getArea();
-rectangle.getPerimeter();
+square.getPerimeter();
+rectangle.getArea();
