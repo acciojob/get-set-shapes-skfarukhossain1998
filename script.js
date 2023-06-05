@@ -6,7 +6,7 @@ constructor (width ,height){
 }
 	// getter
 	get getArea(){
-		return this._height*this._width;
+		return width * height;
 	}
 	
 
@@ -15,8 +15,8 @@ constructor (width ,height){
 }
 
 class Square extends Rectangle {
-	getPerimeter(){
-		return sq_s*sq_s;
+	getPerimeter(sq_s){
+		return sq_s*4;
 	}
 }
 
@@ -24,9 +24,10 @@ class Square extends Rectangle {
 window.Rectangle = Rectangle;
 window.Square = Square;
 
- const rect_w = 7; const rect_h = 8; 
-const sq_s = 6; 
+ const rect_w = 5; 
+const rect_h = 10; 
+const sq_s = 7; 
 const rectangle = new Rectangle(rect_w, rect_h);
-const square = new Square(sq_s); 
-square.getPerimeter();
+const square = new Square(); 
+square.getPerimeter(sq_s);
 rectangle.getArea();
