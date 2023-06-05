@@ -6,7 +6,7 @@ constructor (width ,height){
 }
 	// getter
 	get getArea(){
-		return Number((this._height)*(this._width));
+		return this._height*this._width;
 	}
 	
 
@@ -16,7 +16,7 @@ constructor (width ,height){
 
 class Square extends Rectangle {
 	getPerimeter(){
-		return Number(sq_s*sq_s);
+		return sq_s*sq_s;
 	}
 }
 
