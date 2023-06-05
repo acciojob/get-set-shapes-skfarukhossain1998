@@ -14,9 +14,9 @@ constructor (width ,height){
 	
 }
 
-class Square extends Animal {
+class Square extends Rectangle {
 	getPerimeter(){
-		return Number(2*((this._height)+(this._width)));
+		return Number(sq_s*sq_s);
 	}
 }
 
@@ -24,6 +24,9 @@ class Square extends Animal {
 window.Rectangle = Rectangle;
 window.Square = Square;
 
-const sqr=new Square(25,23);
-sqr.getArea();
-sqr.getPerimeter();
+ const rect_w = 7; const rect_h = 8; 
+const sq_s = 6; 
+const rectangle = new Rectangle(rect_w, rect_h);
+const square = new Square(sq_s); 
+square.getArea();
+rectangle.getPerimeter();
